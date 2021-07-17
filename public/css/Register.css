@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background-color: rgb(241, 241, 241);
+}
+.Container-Main{
+    width: 100%;
+    height: 100vh;
+    display: inline-flex;
+}
+.Image-Left-Page{
+    overflow: hidden;
+    width: 40%;
+    height: 100vh;
+}
+.Container-Right{
+    width: 60%;
+    height: 100vh;
+}
+.Header-Right{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    top: 10vh;
+    height: 10vh;
+}
+.Title{
+    font-family: 'Monda';
+    font-size: max(2.3vw, 20px);
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    top: 1vh;
+}
+.handicapped{
+    width: 30%;
+    position: absolute;
+    height: 7vh;
+    top: 20vh;
+    left: 64%;
+}
+.Container-Form{
+    width: 80%;
+    height: 62vh;
+    position: relative;
+    left: 10%;
+    top: 18vh;
+}
+.Line-1{
+    display: inline-flex;
+    width: 100%;
+    height: 8vh;
+}
+.Name{
+    width: 48%;
+    height: 8vh;
+    border-radius: 3px;
+}
+.LastName{
+    position: relative;
+    width: 48%;
+    left: 4%;
+    height: 8vh;
+    border-radius: 3px;
+}
+.Line-2{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    top: 3vh;
+    height: 8vh;
+}
+.handicapped-Body{
+    position: relative;
+    top: 2vh;
+    left: 35%;
+    font-family: 'Poppins';
+    font-size: max(1.1vw, 15px);
+}
+.Line-3{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    top: 6vh;
+    height: 8vh;
+}
+.Years-Old{
+    width: 48%;
+    height: 8vh;
+    border-radius: 3px;
+}
+.CPF-Number{
+    position: relative;
+    width: 48%;
+    left: 4%;
+    height: 8vh;
+    border-radius: 3px;
+}
+.Email{
+    width: 100%;
+}
+.Line-4{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    top: 9vh;
+    height: 8vh;
+}
+.Password{
+    width: 100%;
+}
+.Line-5{
+    position: absolute;
+    display: inline-flex;
+    width: 40%;
+    top: 42vh;
+    left: 60%;
+    height: 4vh;
+}
+.Line-6{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    top: 15vh;
+    height: 8vh;
+}
+.Redirect-Login{
+    position: relative;
+    font-family: 'Poppins';
+    font-size: max(1vw, 11px);
+    text-decoration: none;
+    font-style: none;
+    left: 41.8%;
+}

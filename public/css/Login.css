@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    background-color: rgb(241, 241, 241);
+}
+.Container-Main{
+    width: 100%;
+    height: 100vh;
+    display: inline-flex;
+}
+.Image-Left-Page{
+    overflow: hidden;
+    width: 40%;
+    height: 100vh;
+}
+.Container-Right{
+    width: 60%;
+    height: 100vh;
+}
+.Header-Right{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    top: 20vh;
+    height: 10vh;
+}
+.Title{
+    font-family: 'Monda';
+    font-size: max(2.3vw, 20px);
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    top: 1vh;
+}
+.Container-Form{
+    width: 54%;
+    height: 50vh;
+    position: relative;
+    left: 23%;
+    top: 20vh;
+}
+.Mail-Input{
+    position: relative;
+    width: 100%;
+    top: 2vh;
+    height: 8vh;
+    border-radius: 5px;
+}
+.Password-Input{
+    position: relative;
+    width: 100%;
+    top: 4vh;
+    height: 8vh;
+    border-radius: 5px;
+}
+.Button-Submit{
+    position: relative;
+    width: 100%;
+    top: 9vh;
+    height: 8vh;
+    border-radius: 5px;
+}
+#btn-Submit{
+    width: 100%;
+    border-radius: 5px;
+    height: 8vh;
+    border: none;
+    background-color: rgb(49, 97, 240);
+}
+.Txt-Btn-Submit{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: .5vh;
+    font-family: 'Poppins';
+    font-size: max(1.2vw, 17px);
+}
+.Forgot-Password_NewAccount{
+    display: inline-flex;
+    position: absolute;
+    top: 20vh;
+    width: 100%;
+    height: 4.5vh;
+}
+.Reset-Password{
+    font-family: 'Poppins';
+    font-size: max(.95vw, 9px);
+    text-decoration: none;
+    font-style: none;
+    position: relative;
+    top: .3vh;
+    text-align: right;
+}
+.Register{
+    font-family: 'Poppins';
+    font-size: max(.95vw, 9px);
+    text-decoration: none;
+    font-style: none;
+    position: relative;
+    top: .3vh;
+    left: 27.5%;
+    text-align: right;
+}
+.Login_With-FaceBook_Google{
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    top: 11vh;
+    height: 9vh;
+}
+.Button-Facebook{
+    display: inline-flex;
+    width: 47%;
+    border-radius: 3px;
+    height: 9vh;
+}
+.FaceBook-Brand{
+    overflow: hidden;
+    width: 30%;
+    height: 9vh;
+}
+.Button-Google{
+    display: inline-flex;
+    width: 47%;
+    position: relative;
+    left: 6%;
+    border-radius: 3px;
+    height: 9vh;
+}
+.Google-Brand{
+    overflow: hidden;
+    width: 30%;
+    height: 9vh;
+}
+#Login-Facebook{
+    display: inline-flex;
+    background-color: rgb(252,252,252);
+    border-radius: 10px;
+    border: 1px solid rgb(218, 218, 218);
+    width: 100%;
+    height: 9vh;
+}
+#Login-Google{
+    display: inline-flex;
+    border-radius: 10px;
+    background-color: rgb(252,252,252);
+    border: 1px solid rgb(218, 218, 218);
+    width: 100%;
+    height: 9vh;
+}
+.Brands{
+    width: 80%;
+    position: relative;
+    left: 2.5%;
+    top: .85vh;
+}
+.Body-Button-Facebook{
+    position: absolute;
+    font-family: 'Poppins';
+    left: 18%;
+    top: 3.2vh;
+    font-size: max(1.2vw, 10px);
+}
+.Body-Button-Google{
+    position: absolute;
+    font-family: 'Poppins';
+    left: 38%;
+    top: 3.2vh;
+    font-size: max(1.2vw, 10px);
+}
+#Line{
+    position: relative;
+    border-color: rgb(0, 0, 0);
+    top: 10vh;
+    left: 0%;
+}
+.LoginMail-Or-Socials{
+    top: 33.58vh;
+    z-index: 99999999;
+    background-color: white;
+    position: absolute;
+    width: 35%;
+    left: 32.5%;
+    height: 5vh;
+}
+.With{
+    font-family: 'Poppins';
+    color: black;
+    position: relative;
+    top: 1.3vh;
+    text-align: center;
+    font-size: max(1vw, 7px);
+}

@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(240,240,240);
+}
+.Nav-Bar-User{
+    display: inline-flex;
+    width: 100%;
+    height: 8vh;
+}
+.Brand{
+    display: inline-flex;
+    position: relative;
+    left: 2%;
+    height: 8vh;
+    width: 15%;
+}
+.Nav-Links{
+    display: inline-flex;
+    position: relative;
+    left:55%;
+    height: 8vh;
+    width: 30%;
+}
+.Links{
+    width: 25%;
+    height: 8vh;
+}
+.Img-brand{
+    width: 30%;
+    height: 8vh;
+}
+.strong{
+    position: relative;
+    top: .8vh;
+    width: 70%;
+}
+.Home{
+    font-family: 'Monda';
+    font-size: max(2.2vw, 12px);
+    position: relative;
+    top: .6vh;
+    color: rgb(140, 32, 218);
+    text-decoration: none;
+    font-style: none;
+    font-weight: bolder;
+}
+#Home{
+    cursor: pointer;
+    width: 100%;
+    height: 8vh;
+    background-color: transparent;
+    border: none;
+}
+.Home-Button{
+    color: #000;
+    font-family: 'Monda';
+    font-size: max(1vw, 12px);
+}
+#Help{
+    cursor: pointer;
+    width: 100%;
+    height: 8vh;
+    background-color: transparent;
+    border: none;
+}
+.Help-Button{
+    color: #000;
+    font-family: 'Monda';
+    font-size: max(1vw, 12px);
+}
+#Info{
+    cursor: pointer;
+    width: 100%;
+    height: 8vh;
+    background-color: transparent;
+    border: none; 
+}
+.Info-Button{
+    color: #000;
+    font-family: 'Monda';
+    font-size: max(1vw, 12px);
+}
+#Login{
+    cursor: pointer;
+    position: relative;
+    left: 0%;
+    width: 95%;
+    height: 5.5vh;
+    top: 1.5vh;
+    background-color: rgb(130, 51, 185);
+    border-radius: 5px;
+    border: none; 
+}
+#Login:hover{
+    background-color: rgb(69, 25, 100);
+    transition: 0.5s;
+
+}
+.Login-Button{
+    color: rgb(255, 255, 255);
+    font-family: 'Monda';
+    font-size: max(1.1vw, 12px);
+}
+.Title-Page{
+    width: 100%;
+    height: 80vh;
+}
+.Gradient-One{
+    width: 100%;
+    position: relative;
+    background-color: rgba(97, 30, 145, .061);
+    height: 80vh;
+}
+.Title-Page-Text{
+    z-index: 99999999999;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    height: 70vh;
+    top: 5vh;
+}
+.Title{
+    font-family: 'Poppins';
+    text-align: center;
+    position: relative;
+    top: 2vh;
+    font-size: max(2.8vw, 18px);
+}
+.Images-Person{
+    display: inline-flex;
+    width: 100%;
+    height: 38vh;
+    position: relative;
+    top: 15vh;
+}
+.Circle-One{
+    position: relative;
+    top: 5vh;
+    width: 20%;
+    border-radius: 50vh;
+    height: 33vh;
+}
+.Circle-Two{
+    position: relative;
+    left: 15%;
+    top: -5vh;
+    width: 27%;
+    border-radius: 52vh;
+    height: 43vh;
+}
+.Circle-Three{
+    position: relative;
+    top: 5vh;
+    width: 20%;
+    left: 30%;
+    border-radius: 50vh;
+    border: 1px solid black;
+    height: 33vh;
+}
+.Images{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 50vh;
+    height: 33vh;
+}
+.Image-Two{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 50vh;
+    height: 43vh;
+}
+.Training-Programs{
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+    top: 10vh;
+    height: 35vh;
+}
+.Training-Title{
+    width: 20%;
+    height: 25vh;
+    position: relative;
+    top:5vh;
+    left: 5%;
+}
+.Title-Training{
+    position: relative;
+    top: 2vh;
+    font-family: 'Monda';
+    font-weight: 400;
+    text-align: center;
+    font-size: max(2vw, 17px);
+}
+.Container-Training{
+    display: inline-flex;
+    position: relative;
+    left: 10%;
+    border-radius: 20px;
+    top: 5vh;
+    width: 65%;
+    background-color: rgb(210,210,210);
+    height: 25vh;
+}
+.Option-1{
+    position: relative;
+    width: 25%;
+    height: 25vh;
+}
+.Space1{
+    position: relative;
+    left: 5%;
+    height: 23vh;
+    width: 3px;
+    top: 1vh;
+    border-radius: 15px;
+    background-color: rgb(190, 190, 190);
+}
+.Calendar{
+    font-family: 'Poppins';
+    font-size: max(1.4vw, 15px);
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+    position: relative;
+    left: 10%;
+    top: 2vh;
+}
+.Image-Calendar{
+    position: absolute;
+    left: 87%;
+    top: 2vh;
+    width: 35px;
+    height: 35px;
+}
+.text-Calendar{
+    font-size: max(1vw, 16px);
+    font-family: 'Poppins';
+    text-align: left;
+    left: 10%;
+    position: relative;
+    top: 4vh;
+}
+.Option-2{
+    position: relative;
+    left: 10%;
+    width: 25%;
+    height: 25vh;
+}
+.Fitness{
+    font-family: 'Poppins';
+    font-size: max(1.4vw, 15px);
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+    position: relative;
+    top: 2vh;
+}
+.Image-Dubbell{
+    position: absolute;
+    left: 65%;
+    top: 1vh;
+    width: 50px;
+    height: 50px;
+}
+.text-Dubbell{
+    font-size: max(1vw, 16px);
+    font-family: 'Poppins';
+    text-align: left;
+    position: relative;
+    top: 4vh;
+}
+.Space2{
+    position: relative;
+    left: 15%;
+    height: 23vh;
+    width: 3px;
+    top: 1vh;
+    border-radius: 15px;
+    background-color: rgb(190, 190, 190);
+}
+.Option-3{
+    position: relative;
+    left: 20%;
+    width: 25%;
+    height: 25vh;
+}
+.balance{
+    font-family: 'Poppins';
+    font-size: max(1.4vw, 15px);
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+    position: relative;
+    top: 2vh;
+}
+.Image-balance{
+    position: absolute;
+    left: 65%;
+    top: 1vh;
+    width: 50px;
+    height: 50px;
+}
+.text-Balance{
+    font-size: max(1vw, 16px);
+    font-family: 'Poppins';
+    text-align: left;
+    position: relative;
+    top: 4vh;
+}
+.House-Exercises{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    top: 12vh;
+    background-color: rgba(71, 71, 71, 0.061);
+}
+.Conatainer-Images{
+    display: inline-flex;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 60vh;
+}
+.Title-Container-Images{
+    width: 30%;
+    position: absolute;
+    top: 5vh;
+    height: 20vh;
+}
+.Box-1{
+    position: absolute;
+    top: 30vh;
+    background-color: rgb(200,200,200);
+    width: 30%;
+    height: 25vh;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.Box-2{
+    position: absolute;
+    overflow: hidden;
+    width: 30%;
+    height: 50vh;
+    border-radius: 5px;
+    top: 5vh;
+    background-color: rgb(200,200,200);
+    left: 35%;
+}
+.Box-3{
+    overflow: hidden;
+    position: absolute;
+    width: 30%;
+    height: 22.5vh;
+    background-color: rgb(200,200,200);
+    left: 70%;
+    top: 5vh;
+    border-radius: 5px;
+}
+.Box-4{
+    overflow: hidden;
+    position: absolute;
+    width: 30%;
+    height: 22.5vh;
+    background-color: rgb(200,200,200);
+    left: 70%;
+    top: 32.5vh;
+    border-radius: 5px;
+}
+.Title-Images{
+    font-family: 'Poppins';
+    font-size: max(1.8vw, 18px);
+    text-align: center;
+    font-weight: 400;
+}
+.Text-Images{
+    font-family: 'Poppins';
+    font-size: max(.9vw, 12px);
+    top: 2vh;
+    font-weight: 300;
+    text-align: left;
+    position: relative;
+}
+.Container-Text-img{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    height: 15vh;
+    top: 4.8vh;
+}
+.img-Box{
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.Price-Plan{
+    position: relative;
+    top: 18vh;
+    width: 100%;
+    height: 75vh;
+}
+.Title-Price-Plan{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 15vh;
+}
+.First-Price-Plan{
+    font-family: 'Monda';
+    text-align: center;
+    position: relative;
+    top: .5vh;
+    font-size: max(1.4vw, 12px);
+    font-weight: bolder;
+    color: rgb(140, 32, 218);
+}
+.Text-Price-Plan{
+    font-family: 'Poppins';
+    font-size: max(2vw, 18px);
+    font-weight: 400;
+    position: relative;
+    top: 1vh;
+    text-align: center;
+}
+.Cards-Plans{
+    display: inline-flex;
+    position: relative;
+    left: 5%;
+    top: 2vh;
+    width: 90%;
+    height: 55vh;
+}
+.Card-One{
+    width: 22.5%;
+    height: 55vh;
+    background-color: rgb(210,210,210);
+    border-radius: 10px;
+}
+.Card-Two{
+    position: relative;
+    width: 22.5%;
+    left: 3.6%;
+    height: 55vh;
+    background-color: rgb(210,210,210);
+    border-radius: 10px;
+}
+.Card-Three{
+    position: relative;
+    width: 22.5%;
+    left: 6.8%;
+    height: 55vh;
+    background-color: rgb(210,210,210);
+    border-radius: 10px;
+}
+.Card-Four{
+    position: relative;
+    background-color: rgb(210,210,210);
+    width: 22.5%;
+    left: 10%;
+    height: 55vh;
+    border-radius: 10px;
+}
+.Header-Card{
+    display: inline-flex;
+    width: 90%;
+    height: 6vh;
+    position: relative;
+    left: 5%;
+    top: 1vh;
+}
+.Title-Card{
+    font-family: 'Poppins';
+    position: relative;
+    left: 15%;
+    top: .5vh;
+    font-size: max(1.4vw, 15px);
+    font-weight: 400;
+    text-align: center;
+    color:rgb(59, 59, 59);
+}
+.Image-Card{
+    width: 40px;
+    top: .5vh;
+    height: 40px;
+    opacity: .8;
+    position: relative;
+    left: 21%;
+}
+.Daily-plan{
+    width: 100%;
+}
+.Price{
+    display: inline-flex;
+    height: 13vh;
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+.Text-Price{
+    font-family: 'Poppins';
+    position: relative;
+    top: 5.5vh;
+    left: 17%;
+    font-size: max(1.4vw, 17px);
+    font-weight: bolder;
+}
+.Text-Value{
+    font-family: 'Poppins';
+    position: relative;
+    top: 3.5vh;
+    left: 20%;
+    font-size: max(2.5vw, 17px);
+    font-weight: bolder;
+}
+#Sep{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    border-color: #c9c9c9;
+}
+.Targets{
+    position: relative;
+    width: 80%;
+    height: 20vh;
+    left: 10%;
+    top: 2vh;
+}
+.Target-T1{
+    display: inline-flex;
+    width: 100%;
+    height: 5.5vh;
+}
+.Image-T1{
+    height: 3vh;
+    width: 35px;
+}
+.T1{
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+}
+.T1-Text{
+    font-family: 'Monda';
+    font-size: max(1.1vw, 15px);
+    top: .3vh;
+    position: relative;
+    left: 12%;
+    color: rgb(49, 49, 49);
+    font-weight: 600;
+}
+.Button-Card{
+    width: 80%;
+    height: 8vh;
+    border-radius: 7px;
+    position: relative;
+    left: 10%;
+    top: 5vh;
+}
+#Purchase-1{
+    width: 100%;
+    height: 8vh;
+    background-color: transparent;
+    color: rgb(39, 39, 39);
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 5px;
+    font-family: 'Monda';
+    font-size: max(0.9vw, 12px);
+    font-weight: bolder;
+}
+#Purchase-1:hover{
+    background-color: rgb(44, 44, 44);
+    color: rgb(210,210,210);
+    transition: .5s;
+}
+#Purchase-2{
+    width: 100%;
+    height: 8vh;
+    background-color: transparent;
+    color: rgb(39, 39, 39);
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 5px;
+    font-family: 'Monda';
+    font-size: max(0.9vw, 12px);
+    font-weight: bolder;
+}
+#Purchase-2:hover{
+    background-color: rgb(44, 44, 44);
+    color: rgb(210,210,210);
+    transition: .5s;
+}
+#Purchase-3{
+    width: 100%;
+    height: 8vh;
+    background-color: transparent;
+    color: rgb(39, 39, 39);
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 5px;
+    font-family: 'Monda';
+    font-size: max(0.9vw, 12px);
+    font-weight: bolder;
+}
+#Purchase-3:hover{
+    background-color: rgb(44, 44, 44);
+    color: rgb(210,210,210);
+    transition: .5s;
+}
+#Purchase-4{
+    width: 100%;
+    height: 8vh;
+    background-color: transparent;
+    color: rgb(39, 39, 39);
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 5px;
+    font-family: 'Monda';
+    font-size: max(0.9vw, 12px);
+    font-weight: bolder;
+}
+#Purchase-4:hover{
+    background-color: rgb(44, 44, 44);
+    color: rgb(210,210,210);
+    transition: .5s;
+}
+.Footer{
+    height: 50vh;
+    width: 100%;
+    position: relative;
+    top: 25vh;
+    background-color: rgb(235,235,235);
+}
+.Title-Footer{
+    width: 60%;
+    left: 20%;
+    position: relative;
+    height: 10vh;
+    top: 10vh;
+}
+.Footer-Title{
+    font-family: 'Monda';
+    font-weight: 500;
+    text-align: center;
+    font-size: max(2.3vw, 20px);
+}
+.Sub-Title{
+    width: 70%;
+    position: relative;
+    left: 15%;
+    height: 8vh;
+    top: 12vh;
+}
+.SubTitle-Footer{
+    font-family: 'Poppins';
+    font-size: max(1.2vw, 18px);
+    color: rgb(90,90,90);
+    text-align: center;
+}
+.Mail-Input{
+    position: relative;
+    width: 30%;
+    height: 8vh;
+    border-radius: 5px;
+    left: 35%;
+    top: 12vh;
+}
+
+.label-float{
+    top: -1.7vh;
+    position: relative;
+    padding-top: 13px;
+    font-family: 'Poppins';
+} 
+.label-float input{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    font-family: 'Poppins';
+    padding: 18px 22px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance:none;
+}
+.label-float input:focus{
+    border: none;
+}
+.label-float input::placeholder{
+    color:transparent;
+}
+.label-float label{
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 10px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    background-color: transparent;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.label-float input:required:invalid + label{
+    color: red;
+}
+.label-float input:focus:required:invalid{
+    border: 2px solid red;
+}
+.label-float input:required:invalid + label:before{
+    content: '*';
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+    font-size: 16px;
+    top: -.5vh;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #3d3d3d;
+}
+.Submit-Form{
+    position: absolute;
+    z-index: 9999999999;
+    width: 5%;
+    height: 7.8vh;
+    border-radius: 0px 8px 8px 0px;
+    top: 29.9vh;
+    left: 60%;
+}
+#Submit-Mail{
+    cursor: pointer;
+    width: 100%;
+    height: 7.8vh;
+    border-radius: 3px;
+    background-color: rgb(121, 29, 187);
+    border: none;
+}
+.Submit-Image{
+    position: relative;
+    width: 27px;
+    height: 27px;
+    left: 32%;
+}
+.Img-Submit{
+    width: 100%;
+}
