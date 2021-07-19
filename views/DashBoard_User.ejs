@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +9,31 @@
     <link rel="stylesheet" href="/css/DashBoard.css">
     <title>DashBoard - </title>
 </head>
-
 <body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars" data-sidebar-shortcut-enabled="true"
     data-dm-shortcut-enabled="true">
+
+    <div class="modal" id="modal-1" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" role="button" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </a>
+                <h5 class="modal-title" style="text-align: center;">Abdominais</h5>
+                <p id="Content-Modal" style="text-align: center;">
+                    Deite com a barriga para cima e levante um pouco as pernas e o tronco colocando os braços para
+                    frente ao mesmo tempo.
+                </p>
+                <p id="Numbers-Modal">0</p>
+                <div class="text-center mt-20">
+                    <a href="#" class="btn mr-5" role="button">Sair</a>
+                    <button type="button" id="Start-Trainning">Iniciar Treino</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <input type="hidden" name="docs-section-id" id="docs-section-id" value="buttons">
     <div id="page-wrapper Auto-Detection" class="page-wrapper with-navbar with-sidebar"
         data-sidebar-type="overlayed-sm-and-down">
-        <!-- Navbar start -->
         <nav class="navbar">
             <div class="navbar-content">
                 <button id="toggle-sidebar-btn" class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
@@ -42,14 +59,11 @@
                     <img src="/images/strong.png">
                     Fitgym
                 </a>
-                <!-- Sidebar content with the search box -->
                 <div class="sidebar-content">
                     <div class="mt-10 font-size-12">
-                        <!-- mt-10 = margin-top: 1rem (10px), font-size-12 = font-size: 1.2rem (12px) -->
                         <kbd style="font-size: max(.99vw, 10px);">Seja Bem vindo <%= User.Name %>!</kbd>
                     </div>
                 </div>
-                <!-- Sidebar links and titles -->
                 <h5 class="sidebar-title">Saúde</h5>
                 <div class="sidebar-divider"></div>
                 <a href="#" class="sidebar-link">Exercicios em casa</a>
@@ -63,33 +77,75 @@
                 <a href="#" class="sidebar-link">Tabela nutricional</a>
             </div>
         </div>
-
         <div class="content-wrapper">
             <div class="card">
                 <div class="Container-PerfilUser">
-
                     <div class="PerfilUser">
-
                         <div class="Daily-Training">
-                            <h1 class="Title-Daily">Treinamento diário</h1>
+                            <h1 class="Title-Daily">Selecione o treinamento diário</h1>
                         </div>
-
                         <div class="Perfil">
-                            <h1 class="Name-User"><%= User.Name + ' ' + User.LastName %></h1>
+                            <h1 class="Name-User">
+                                <%= User.Name + ' ' + User.LastName %>
+                            </h1>
                             <div class="Circle-img">
                                 <img class="Img-User" src="/images/user.png" alt="">
                             </div>
-                        </div> 
+                        </div>
+                    </div>
+                    <div class="Container-GridExercises">
+                        <div class="Card-1">
+                            <h1 class="Title-Exercise">Abdominais</h1>
+                            <div class="Image-Exercise">
+                                <img class="Img-Exercise" src="/images/fitness.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="Card-2">
+                            <h1 class="Title-Exercise">Flexões</h1>
+                            <div class="Image-Exercise">
+                                <img class="Img-Exercise" src="/images/pilates.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="Card-3">
+                            <h1 class="Title-Exercise">Polichinelos</h1>
+                            <div class="Image-Exercise">
+                                <img class="Img-Exercise" src="/images/dancando.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="Card-4">
+                            <h1 class="Title-Exercise">Prancha</h1>
+                            <div class="Image-Exercise">
+                                <img class="Img-Exercise" src="/images/prancha.png" alt="">
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="Container-GridExercises">
-                        
+                    <div class="Card-HealthyEating">
+                        <div class="Text-HealthyEating">
+                            <h1 class="Txt-HealthyEating">Olá <%= User.Name %>, como anda a sua Alimentação?</h1>
+
+                            <p class="Body-HealthyEating">A plataforma da Fitgym possuí um plano próprio para manter um
+                                controle de
+                                alimentação da forma mais saudável possível, e então o que você acha de dar uma olhada?
+                            </p>
+
+                            <div class="Button-HealthyEating">
+                                <button class="btn" type="button" style="width: 100%; height: 8vh;">Mais
+                                    informações</button>
+                            </div>
+                        </div>
+
+                        <div class="Image-HealthyEating">
+                            <img class="Img-HealthyEating" src="/images/lunch-time.png" alt="">
+                        </div>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
     </div>
-
     <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
@@ -97,7 +153,5 @@
     <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
     <script src="/halfmoonFramework/js/halfmoon.js"></script>
     <script src="/javascript/DashBoard.js"></script>
-
 </body>
-
 </html>

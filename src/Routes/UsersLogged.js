@@ -10,7 +10,6 @@ Router.get('/DashBoard', (req, res, next) => {
     res.render('DashBoard_User', {
         User: req.user
     });
-    console.log(user)
 });
 
 module.exports = Router;
