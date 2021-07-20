@@ -30,8 +30,7 @@ app.use(bodyParser.json())
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.use('/', index);
-app.use('/User/', userAuthenticate)
-//app.use('/User/', authenticateMiddleware, userAuthenticate)
+app.use('/User/', authenticateMiddleware, userAuthenticate)
 
     /*
      *******************************************************************
