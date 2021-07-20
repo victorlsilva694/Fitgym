@@ -14,6 +14,8 @@
 <body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars" data-sidebar-shortcut-enabled="true"
     data-dm-shortcut-enabled="true">
 
+    <!-- Modal da sessão de abdominal -->
+
     <div class="modal modal-full ie-scroll-fix" id="modal-5" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -24,21 +26,34 @@
                     <div class="row">
                         <div class="col-md-8 offset-md-2">
                             <br /><br />
-                            <div class="text-muted font-size-20 font-weight-medium">
+                            <div id="HiddenTitle" class="text-muted font-size-20 font-weight-medium">
                                 Abdominais
                                 <i class="fa fa-angle-right ml-5"></i>
                             </div>
-                            <h2 class="mt-10 mb-10 font-weight-medium">
+                            <h2 id="HiddenSubTitle" class="mt-10 mb-10 font-weight-medium">
                                 Tipos de Abdominais
                             </h2>
-                            <div class="font-size-20">
+                            <div id="HiddenName" class="font-size-20">
                                 <%= User.Name + ' ' + User.LastName %>
                             </div>
                             <br />
                             <div class="text-center">
                                 <img src="/images/fitness.png" class="img-fluid rounded" alt="fullscreen-modal-img">
                             </div>
-                            <div class="font-size-18">
+
+                            <div class="Chronometer">
+                                <h1 class="Title-Chronometer">Cronômetro para abdominal</h1>
+                                <h5 class="SubTitle-Chronometer">Um minuto por sessão</h5>
+
+                                <p class="Chronometer-Timer">00:00</p>
+
+                                <div class="Init-Timer">
+                                    <button style="width: 100%; height: 8vh;" id="InitStart-Timer" class="btn btn-primary"
+                                        type="button">Iniciar Treino</button>
+                                </div>
+                            </div>
+
+                            <div id="Hidden" class="font-size-18">
                                 <p>
                                     Para o primeiro tipo de abdominal, deite com as costas no chão, pernas esticadas e
                                     braços ao lado. Usando os músculos do abdômen, faça força para elevar o tronco
@@ -93,13 +108,19 @@
                                 <p>
                                     Para realizar ultimo tipo de abdominal, deite com pernas esticadas e as mãos ao lado
                                     da cabeça. Contraia o abdômen para subir levemente o tronco enquanto dobra e eleva o
-                                    joelho esquerdo, nesse movimento, o cotovelo direito vai ao encontro do joelho esquerdo.
+                                    joelho esquerdo, nesse movimento, o cotovelo direito vai ao encontro do joelho
+                                    esquerdo.
                                     Faça o mesmo com o outro lado.
                                 </p>
                             </div>
+
+                            <div class="Buttons-StartTrainning">
+                                <button id="Start-Trainning" type="button">Iniciar Treino</button>
+                            </div>
+
                             <hr />
-                            <div class="text-center mt-20 text-muted">
-                                Fonte: https://www.smartfit.com.br/news/fitness/tipos-de-abdominais - Smart Fit News 
+                            <div id="References" class="text-center mt-20 text-muted">
+                                Fonte: https://www.smartfit.com.br/news/fitness/tipos-de-abdominais - Smart Fit News
                             </div>
                         </div>
                     </div>
@@ -107,7 +128,9 @@
             </div>
         </div>
     </div>
-    </div>
+
+
+
     <input type="hidden" name="docs-section-id" id="docs-section-id" value="buttons">
     <div id="page-wrapper Auto-Detection" class="page-wrapper with-navbar with-sidebar"
         data-sidebar-type="overlayed-sm-and-down">
