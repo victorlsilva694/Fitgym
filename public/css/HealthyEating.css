@@ -289,3 +289,10 @@
     text-align: center;
     font-size: max(1.6vw, 20px);
 }
+#NameFood2{
+    position: relative;
+    top: 2vh;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: max(1.8vw, 20px);
+}
