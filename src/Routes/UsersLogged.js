@@ -12,4 +12,11 @@ Router.get('/DashBoard', (req, res, next) => {
     });
 });
 
+Router.get('/DashBoard/HealthyEating', (req, res, next) => {
+    res.render('DashBoard_Itens/HealthyEating', {
+        User: req.user
+    });
+});
+
+
 module.exports = Router;
