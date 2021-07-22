@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/halfmoonFramework/css/halfmoon-variables.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/ValueKcal.css">
+    <title>DashBoard - </title>
+</head>
+
+<body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars" data-sidebar-shortcut-enabled="true"
+    data-dm-shortcut-enabled="true">
+
+    <input type="hidden" name="docs-section-id" id="docs-section-id" value="buttons">
+    <div id="page-wrapper Auto-Detection" class="page-wrapper with-navbar with-sidebar"
+        data-sidebar-type="overlayed-sm-and-down">
+        <nav class="navbar">
+            <div class="navbar-content">
+                <button id="toggle-sidebar-btn" class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+            <a href="/" class="navbar-brand ml-10 ml-sm-15">
+                <img src="/images/strong.png" class="hidden-dm mr-5 mr-sm-10">
+                <img src="/images/strong.png" class="hidden-lm mr-5 mr-sm-10">
+                <p class="Brand-Txt">Fitgym</p>
+            </a>
+            <div class="navbar-content ml-auto">
+                <button class="btn btn-action mr-5" type="button" onclick="halfmoon.toggleDarkMode()"
+                    aria-label="Toggle dark mode">
+                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+        <div style="width: 18%" class="sidebar" id="sidebar">
+            <div class="sidebar-menu">
+                <a href="#" class="sidebar-brand">
+                    <img src="/images/strong.png">
+                    Fitgym
+                </a>
+                <div class="sidebar-content">
+                    <div class="mt-10 font-size-12">
+                        <kbd style="font-size: max(.99vw, 10px);">Seja Bem vindo <%= User.Name %>!</kbd>
+                    </div>
+                </div>
+                <h5 class="sidebar-title">Saúde</h5>
+                <div class="sidebar-divider"></div>
+                <a href="http://localhost:3000/User/DashBoard" class="sidebar-link">Exercicios em casa</a>
+                <a href="http://localhost:3000/User/DashBoard/HealthyEating" class="sidebar-link">Alimentação
+                    saudável</a>
+                <br />
+                <h5 class="sidebar-title">Algumas Opções</h5>
+                <div class="sidebar-divider"></div>
+                <a href="http://localhost:3000/User/DashBoard/imc" class="sidebar-link">Cáculo de IMC</a>
+                <a href="http://localhost:3000/User/DashBoard/valuekcal" class="sidebar-link">Calorias por pratos</a>
+                <a href="http://localhost:3000/User/DashBoard/NutritionalTable" class="sidebar-link">
+                    Tabelanutricional
+                </a>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="card">
+                <label for="multi-select-1">Selecione os alimentos</label>
+                <select class="form-control" id="multi-select-1" multiple="multiple" size="8">
+                    <option value="Refrigerante">Refrigerante</option>
+                    <option value="Cheeseburguer">Cheeseburguer</option>
+                    <option value="Batata-Frita">Batata-Frita</option>
+                    <option value="Sorvete de casquinha">Sorvete de casquinha</option>
+                    <option value="Arroz">Arroz</option>
+                    <option value="Feijão">Feijão</option>
+                    <option value="Bife">Bife</option>
+                    <option value="Alface">Alface</option>
+                    <option value="Tomate">Tomate</option>
+                    <option value="Cenoura">Cenoura</option>
+                    <option value="Beterraba">Beterraba</option>
+                    <option value="Laranja">Laranja</option>
+                    <option value="Uva">Uva</option>
+                    <option value="Banana">Banana</option>
+                    <option value="Leite">Leite</option>
+                    <option value="Maionese">Maionese</option>
+                    <option value="Queijo">Queijo</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Gelatina">Gelatina</option>
+                    <option value="Leite Condensado">Leite Condensado</option>
+                </select>
+                <br>
+                <label for="multi-select-1">Selecione a quantidade </label>
+                <select class="form-control" id="select-1">
+                    <option value="1">1</option>
+                    <option value=2>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="7">9</option>
+                    <option value="8">10</option>
+                </select>
+                <br>
+                <div class="AddFoods">
+                    <div class="Button-Add-Food">
+                        <button style="width: 100%; height: 8vh;" class="btn" id="Button-Add" type="button">
+                            Adicionar Alimento
+                        </button>
+
+                        <div class="Foods-Selected">
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    <script src="/halfmoonFramework/js/halfmoon.js"></script>
+    <script src="/javascript/ValueKcal.js"></script>
+</body>
+
+</html>

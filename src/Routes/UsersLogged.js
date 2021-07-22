@@ -30,4 +30,10 @@ Router.get('/DashBoard/imc', (req, res, next) => {
     });
 });
 
+Router.get('/DashBoard/valuekcal', (req, res, next) => {
+    res.render('DashBoard_Itens/ValueKcal', {
+        User: req.user
+    });
+});
+
 module.exports = Router;

@@ -1,0 +1,16 @@
+.AddFoods{
+    position: relative;
+    height: 40vh;
+    width: 100%;
+}
+.Button-Add-Food{
+    width: 100%;
+    height: 8vh;
+}
+.Foods-Selected{
+    position: relative;
+    top: 2.5vh;
+    width: 100%;
+    height: 30vh;
+    border: 1px solid white;
+}
