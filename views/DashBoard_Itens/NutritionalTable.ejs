@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/halfmoonFramework/css/halfmoon-variables.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/NutrionalTable.css">
+    <title>DashBoard - </title>
+</head>
+
+<body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars" data-sidebar-shortcut-enabled="true"
+    data-dm-shortcut-enabled="true">
+
+    <input type="hidden" name="docs-section-id" id="docs-section-id" value="buttons">
+    <div id="page-wrapper Auto-Detection" class="page-wrapper with-navbar with-sidebar"
+        data-sidebar-type="overlayed-sm-and-down">
+        <nav class="navbar">
+            <div class="navbar-content">
+                <button id="toggle-sidebar-btn" class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+            <a href="/" class="navbar-brand ml-10 ml-sm-15">
+                <img src="/images/strong.png" class="hidden-dm mr-5 mr-sm-10">
+                <img src="/images/strong.png" class="hidden-lm mr-5 mr-sm-10">
+                <p class="Brand-Txt">Fitgym</p>
+            </a>
+            <div class="navbar-content ml-auto">
+                <button class="btn btn-action mr-5" type="button" onclick="halfmoon.toggleDarkMode()"
+                    aria-label="Toggle dark mode">
+                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+        <div style="width: 18%" class="sidebar" id="sidebar">
+            <div class="sidebar-menu">
+                <a href="#" class="sidebar-brand">
+                    <img src="/images/strong.png">
+                    Fitgym
+                </a>
+                <div class="sidebar-content">
+                    <div class="mt-10 font-size-12">
+                        <kbd style="font-size: max(.99vw, 10px);">Seja Bem vindo <%= User.Name %>!</kbd>
+                    </div>
+                </div>
+                <h5 class="sidebar-title">Saúde</h5>
+                <div class="sidebar-divider"></div>
+                <a href="http://localhost:3000/User/DashBoard" class="sidebar-link">Exercicios em casa</a>
+                <a href="http://localhost:3000/User/DashBoard/HealthyEating" class="sidebar-link">Alimentação
+                    saudável</a>
+                <br />
+                <h5 class="sidebar-title">Algumas Opções</h5>
+                <div class="sidebar-divider"></div>
+                <a href="http://localhost:3000/User/DashBoard/imc" class="sidebar-link">Cáculo de IMC</a>
+                <a href="#" class="sidebar-link">Calorias por pratos</a>
+                <a href="#" class="sidebar-link">Tabela nutricional</a>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="card">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Alimento</th>
+                            <th>Porção</th>
+                            <th class="text-right">
+                                <th>Valor Calórico</th>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Refrigerante de cola</th>
+                            <td>1 lata (350ml)</td>
+                            <td class="text-right">
+                                <td>150kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Cheeseburguer</th>
+                            <td>1 unidade (150g)</td>
+                            <td class="text-right">
+                                <td>350kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Batata Frita</th>
+                            <td>1 porção (100g)</td>
+                            <td class="text-right">
+                                <td>288kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Arroz tipo 1 cozido</th>
+                            <td>5 colheres de sopa (150g)</td>
+                            <td class="text-right">
+                                <td>192kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Feijão carioca</th>
+                            <td>1 concha grande (65g)</td>
+                            <td class="text-right">
+                                <td>50kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Bife grelhado</th>
+                            <td>2 unidades (200g)</td>
+                            <td class="text-right">
+                                <td>388kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Alface americana</th>
+                            <td>2 folhas (100g)</td>
+                            <td class="text-right">
+                                <td>20kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Tomate</th>
+                            <td>1 unidade (150g)</td>
+                            <td class="text-right">
+                                <td>32kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Cenoura ralada</th>
+                            <td>1 xícara chá (70g)</td>
+                            <td class="text-right">
+                                <td>24kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Beterraba cozida</th>
+                            <td>3 colheres de sopa (100g)</td>
+                            <td class="text-right">
+                                <td>32kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Laranja pera</th>
+                            <td>1 unidade (100g)</td>
+                            <td class="text-right">
+                                <td>37kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Abacate</th>
+                            <td>1 unidade (100g)</td>
+                            <td class="text-right">
+                                <td>177kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Abacaxi</th>
+                            <td>1 fatia (80g)</td>
+                            <td class="text-right">
+                                <td>50kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Goiaba Vermelha</th>
+                            <td>1 unidade (80g)</td>
+                            <td class="text-right">
+                                <td>43kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Leite</th>
+                            <td>1 Copo (240ml)</td>
+                            <td class="text-right">
+                                <td>150kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Bolacha água e sal</th>
+                            <td>1 unidade</td>
+                            <td class="text-right">
+                                <td>32kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Bolacha recheada de chocolate</th>
+                            <td>1 unidade</td>
+                            <td class="text-right">
+                                <td>41kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Pão de hambúrguer</th>
+                            <td>1 unidade (60g)</td>
+                            <td class="text-right">
+                                <td>41kcal</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Pão francês</th>
+                            <td>1 unidade (50g)</td>
+                            <td class="text-right">
+                                <td>135kcal</td>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    <script src="/halfmoonFramework/js/halfmoon.js"></script>
+    <script src="/javascript/NutritionalTable.js"></script>
+</body>
+
+</html>

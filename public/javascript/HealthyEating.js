@@ -40,18 +40,18 @@ let ImgFood2 = document.querySelector("#Img-Food-2");
 Card_1.addEventListener('click', () => {
     window.location.href = 'http://localhost:3000/User/DashBoard/HealthyEating#modal-5';
     ImgExercise.src = '/images/breakfast.png';
-    Text_1.innerHTML = "Os ingredientes são: Farinha de trigo 1 xícara (chá), Açúcar 4 colheres (sopa), Fermento químico em pó 3 colheres (chá), Ovo 2 unidades,Leite 1 xícara (chá), Manteiga 2 colheres (sopa), Sal 1 pitada, Manteiga a gosto.";
-    Text_2.innerHTML = "Para iniciar a receita, Misture todos os ingredientes secos e em outro recipiente misture os líquidos mexendo bem.";
-    Text_3.innerHTML = "Depois junte os dois , secos e líquidos sem bater , e nem mexer muito."
-    Text_4.innerHTML = "Em seguida para finalizar unte a frigideira e com o auxilio de uma concha coloque porçoes e frite por aproximadamente um minuto de cada lado ou ate ficar douradinha em fogo médio."
-    Text_5.innerHTML = "O tempo de preparo é de 30 minutos e a quantidade calórica são de 657,79kcal em 2 porções."
+    Text_1.innerHTML = "2 ovos; 1 xícara de chá de queijo minas meia cura ralado; ¼ de cebola picada; ½ tomate picado; ½ xícara de chá de espinafre; Azeite, sal e pimenta do reino a gosto.";
+    Text_2.innerHTML = "Bata os 2 ovos, pode ser na batedeira ou não. Após ter batido bem, coloque-o na frigideira já untada com óleo, acrescente o sal, o presunto picado em quadradinhos e as duas fatias de queijo (não precisa picar o queijo). ";
+    Text_3.innerHTML = "Coloque os temperos a gosto, espere ficar firme, e vire o omelete. Está pronto um omelete delicioso, bom apetite!"
+    Text_4.innerHTML = ""
+    Text_5.innerHTML = ""
     Text_6.innerHTML = "3 copos americanos (1/2 litro) de água, 3 colheres de sopa (30g) de café, Açúcar a gosto"
     Text_7.innerHTML = "Coloque o filtro de papel no coador e encaixe sobre uma jarra ou garrafa térmica."
     Text_8.innerHTML = "Coloque a água num fervedor e leve ao fogo médio para aquecer. Atenção: não deixe a água ferver, assim que começarem a subir as primeiras bolhinhas desligue o fogo – se a água estiver muito quente pode queimar o pó e deixar o café amargo em excesso."
     Text_9.innerHTML = "Regue um pouco da água quente sobre o filtro sem o café – é bem pouco mesmo, apenas para aquecer o filtro e o coador e eliminar qualquer aroma indesejado do papel. Despreze a água."
     Text_10.innerHTML = "Coloque o pó de café no filtro umedecido e regue apenas a quantidade suficiente de água quente para umedecer todo o pó. Deixe hidratar por alguns segundos e regue o restante da água, em movimento circular para coar todo o pó por igual. Deixe o cafécoar sem mexer. Sirva a seguir."
     References.innerHTML = "Café da manhã"
-    ImgModal.src = "https://images.unsplash.com/photo-1528207776546-365bb710ee93?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+    ImgModal.src = "https://cdn.pixabay.com/photo/2015/05/20/16/11/kitchen-775746_960_720.jpg"
     ImgModal.style.width = "100%"
     ImgFood2.src = "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
 

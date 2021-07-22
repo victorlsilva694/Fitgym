@@ -13,7 +13,7 @@ app.use(session({
     secret: 'FitGymEntry',
     resave: false,
     saveUninitialized: false,
-    cookie: {maxAge: 2 * 60 * 1000}
+    cookie: {maxAge: 2 * 60 * 90000}
 }));
 
 function authenticateMiddleware(req, res, next){

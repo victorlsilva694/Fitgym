@@ -24,4 +24,10 @@ Router.get('/DashBoard/NutritionalTable', (req, res, next) => {
     });
 });
 
+Router.get('/DashBoard/imc', (req, res, next) => {
+    res.render('DashBoard_Itens/Imc', {
+        User: req.user
+    });
+});
+
 module.exports = Router;

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+.Container-Main{
+    display: inline-flex;
+    height: 72vh;
+    width: 100%;
+}
+.Form-Imc{
+    width: 60%;
+    height: 73vh;
+}
+.Imc-info{
+    width: 40%;
+    height: 73vh;
+}
+.Legend{
+    font-family: 'Poppins';
+    position: relative;
+    text-align: center;
+    top: 5vh;
+    font-size: max(1.8vw, 17px);
+}
+.control-form-IMC{
+    position: relative;
+    left: 10%;
+    top: 10vh;
+    width: 80%;
+    height: 30vh;
+}
+.Button-CalcImc{
+    position: relative;
+    top: 5vh;
+    width: 100%;
+    height: 7vh;
+}
+.Resultado{
+    display: none;
+    position: relative;
+    left: 10%;
+    top: 12vh;
+    width: 80%;
+    height: 20vh;
+}
+.Txt-Resultado{
+    position: relative;
+    top: -4vh;
+    text-align: center;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: max(4vw, 30px);
+}
+.Classification{
+    position: relative;
+    top: -12vh;
+    text-align: center;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: max(1vw, 10px);
+}
+.Legend-Result{
+    font-family: 'Poppins';
+    position: relative;
+    text-align: center;
+    font-size: max(1.8vw, 17px);
+}
+.Table-ResultIMC{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}

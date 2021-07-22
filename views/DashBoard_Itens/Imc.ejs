@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/halfmoonFramework/css/halfmoon-variables.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/IMC.css">
+    <title>DashBoard - </title>
+</head>
+
+<body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars" data-sidebar-shortcut-enabled="true"
+    data-dm-shortcut-enabled="true">
+
+    <input type="hidden" name="docs-section-id" id="docs-section-id" value="buttons">
+    <div id="page-wrapper Auto-Detection" class="page-wrapper with-navbar with-sidebar"
+        data-sidebar-type="overlayed-sm-and-down">
+        <nav class="navbar">
+            <div class="navbar-content">
+                <button id="toggle-sidebar-btn" class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+            <a href="/" class="navbar-brand ml-10 ml-sm-15">
+                <img src="/images/strong.png" class="hidden-dm mr-5 mr-sm-10">
+                <img src="/images/strong.png" class="hidden-lm mr-5 mr-sm-10">
+                <p class="Brand-Txt">Fitgym</p>
+            </a>
+            <div class="navbar-content ml-auto">
+                <button class="btn btn-action mr-5" type="button" onclick="halfmoon.toggleDarkMode()"
+                    aria-label="Toggle dark mode">
+                    <i class="fa fa-moon-o" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+        <div style="width: 18%" class="sidebar" id="sidebar">
+            <div class="sidebar-menu">
+                <a href="#" class="sidebar-brand">
+                    <img src="/images/strong.png">
+                    Fitgym
+                </a>
+                <div class="sidebar-content">
+                    <div class="mt-10 font-size-12">
+                        <kbd style="font-size: max(.99vw, 10px);">Seja Bem vindo <%= User.Name %>!</kbd>
+                    </div>
+                </div>
+                <h5 class="sidebar-title">Saúde</h5>
+                <div class="sidebar-divider"></div>
+                <a href="http://localhost:3000/User/DashBoard" class="sidebar-link">Exercicios em casa</a>
+                <a href="http://localhost:3000/User/DashBoard/HealthyEating" class="sidebar-link">Alimentação
+                    saudável</a>
+                <br />
+                <h5 class="sidebar-title">Algumas Opções</h5>
+                <div class="sidebar-divider"></div>
+                <a href="http://localhost:3000/User/DashBoard/imc" class="sidebar-link">Cáculo de IMC</a>
+                <a href="#" class="sidebar-link">Calorias por pratos</a>
+                <a href="http://localhost:3000/User/DashBoard/NutritionalTable" class="sidebar-link">Tabela
+                    nutricional</a>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="card">
+                <div class="Container-Main">
+                    <div class="Form-Imc">
+                        <h1 class="Legend">
+                            <%= User.Name %>, preencha o formulário!
+                        </h1>
+
+                        <div class="control-form-IMC">
+                            <input id="Mass" type="text" style="height: 7vh;" class="form-control form-control-lg"
+                                placeholder="Digite seu peso">
+                            <br>
+                            <input id="HeightBody" type="text" style="height: 7vh;" class="form-control form-control-lg"
+                                placeholder="Digite sua altura">
+
+                            <div class="Button-CalcImc">
+                                <button class="btn" id="Result" style="width: 100%;height: 7vh;" type="button">Calcular IMC</button>
+                            </div>
+                        </div>
+                        <div class="Resultado">
+                            <p class="Txt-Resultado"></p>
+                            <p class="Classification"></p>
+                        </div>
+                    </div>
+                    <div class="Imc-info">
+                        <h1 class="Legend-Result">Legenda do resultado</h1>
+
+                        <div class="Table-ResultIMC">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>IMC</th>
+                                        <th>Classificação</th>
+                                        <th>Obesidade (grau)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Menor que 18,5</th>
+                                        <td>Magreza</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Entre 18,5 e 24,9</th>
+                                        <td>Normal</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Entre 25,0 e 29,9</th>
+                                        <td>Sobrepeso</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Entre 30,0 e 39,9</th>
+                                        <td>Obesidade</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Maior que 40</th>
+                                        <td>Obesidade grave</td>
+                                        <td>3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    <script src="/halfmoonFramework/js/halfmoon.js"></script>
+    <script src="/javascript/Imc.js"></script>
+</body>
+
+</html>
+<!--
+
+<h1 class="Title-IMC"><%= User.Name %>, bem vindo a calculadora de IMC</h1>
+                
+                <div class="Form-IMC">
+                    <input type="text" class="form-control form-control-lg" placeholder="* Digite seu peso">
+                    <br>
+                    <input type="text" class="form-control form-control-lg" placeholder="* Digite sua altura">
+                </div>
+
+
+-->
