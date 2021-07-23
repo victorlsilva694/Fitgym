@@ -1,9 +1,4 @@
-=> Campos tabela usuarios
+Com muito esforço, tenho mais um projeto finalizado... Dessa vez um sistema de condicionamento físico e saúde chamado FitGym. 
 
-    1 -> Nome  - F
-    2 -> Sobrenome  - F
-    3 -> Data de nascimento  -F
-    4 -> Portador de deficiencia  -F
-    5 -> Email  -F
-    6 -> Senha
-    7 -> CPF
+Tutorial para instalar e utilizar o projeto: 
+
