@@ -163,7 +163,7 @@ Card_4.addEventListener('click', () => {
 
     ButtonsStartTrainning.style.display = 'block';
     BtnStart.style.display = 'block';
-    References.innerHTML = 'Fonte: https://www.atletis.com.br/prancha-abdominal-em-casa';
+    References.innerHTML = "Prancha abdominal";
     TitleChronometer.innerHTML = "Prancha abdominal";
 
 });

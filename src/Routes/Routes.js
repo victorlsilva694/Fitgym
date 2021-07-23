@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const UsersModel = require('../Model/UsersModel');
+const EmailUsersModel = require('../Model/EmailUser')
 
 
 router.get('/', (req, res, next) => {
@@ -62,8 +63,15 @@ router.post('/Register/Save', (req, res, next) => {
     }
 });
 
-router.post('/reset/password/Save', (req, res, next) => {
-
+router.post('/SaveMail', (req, res, next) => {
+    
+    let Email = req.body.Email;
+    
+    EmailUsersModel.create({
+        Email: Email
+    }).then(() => {
+        res.redirect('/');
+    })
 });
 
 module.exports = router;

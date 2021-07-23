@@ -64,54 +64,41 @@
         </div>
         <div class="content-wrapper">
             <div class="card">
+                <input id="Quantities" type="number" class="form-control" placeholder="Quantidade do alimento (Lata, Ml, Kg, Mg, Litro, Unidade )">
+                <br>
                 <label for="multi-select-1">Selecione os alimentos</label>
                 <select class="form-control" id="multi-select-1" multiple="multiple" size="8">
-                    <option value="Refrigerante">Refrigerante</option>
-                    <option value="Cheeseburguer">Cheeseburguer</option>
-                    <option value="Batata-Frita">Batata-Frita</option>
-                    <option value="Sorvete de casquinha">Sorvete de casquinha</option>
-                    <option value="Arroz">Arroz</option>
-                    <option value="Feijão">Feijão</option>
-                    <option value="Bife">Bife</option>
-                    <option value="Alface">Alface</option>
-                    <option value="Tomate">Tomate</option>
-                    <option value="Cenoura">Cenoura</option>
-                    <option value="Beterraba">Beterraba</option>
-                    <option value="Laranja">Laranja</option>
-                    <option value="Uva">Uva</option>
-                    <option value="Banana">Banana</option>
-                    <option value="Leite">Leite</option>
-                    <option value="Maionese">Maionese</option>
-                    <option value="Queijo">Queijo</option>
-                    <option value="Chocolate">Chocolate</option>
-                    <option value="Gelatina">Gelatina</option>
-                    <option value="Leite Condensado">Leite Condensado</option>
-                </select>
-                <br>
-                <label for="multi-select-1">Selecione a quantidade </label>
-                <select class="form-control" id="select-1">
-                    <option value="1">1</option>
-                    <option value=2>2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="7">9</option>
-                    <option value="8">10</option>
+                    <option id="Refrigerante" onclick="RefrigeranteKcal()" value="Refrigerante">Refrigerante</option>
+                    <option id="Cheeseburguer" onclick="Cheeseburguerkcal()" value="Cheeseburguer">Cheeseburguer</option>
+                    <option id="Batata-Frita" onclick="Batata_FritaKcal()" value="Batata-Frita">Batata-Frita</option>
+                    <option id="Sorvete" onclick="SorveteKcal()" value="Sorvete de casquinha">Sorvete de casquinha</option>
+                    <option id="Arroz" onclick="Arrozkcal()" value="Arroz">Arroz</option>
+                    <option id="Feijao" onclick="FeijaoKcal()" value="Feijão">Feijão</option>
+                    <option id="Bife" onclick="Bifekcal()" value="Bife">Bife</option>
+                    <option id="Abacate" onclick="Abacatekcal()" value="Abacate">Abacate</option>
+                    <option id="Alface" onclick="AlfaceKcal()" value="Alface">Alface</option>
+                    <option id="Tomate" onclick="TomateKcal()" value="Tomate">Tomate</option>
+                    <option id="Cenoura" onclick="CenouraKcal()" value="Cenoura">Cenoura</option>
+                    <option id="Beterraba" onclick="Beterrabakcal()" value="Beterraba">Beterraba</option>
+                    <option id="Laranja" onclick="LaranjaKcal()" value="Laranja">Laranja</option>
+                    <option id="Abacaxi" onclick="AbacaxiKcal()" value="Abacaxi">Abacaxi</option>
+                    <option id="Goiaba" onclick="GoiabaKcal()" value="Goiaba">Goiaba</option>
+                    <option id="Leite" onclick="Leitekcal()" value="Leite">Leite</option>
+                    <option id="Bolacha" onclick="BolachaKcal()" value="Bolacha">Bolacha</option>
+                    <option id="Pao_de_hamburguer" onclick="Pao_de_hamburguerkcal()" value="Pao_de_hamburguer">Pao_de_hamburguer</option>
+                    <option id="Bolacha_Recheada" onclick="Bolacha_RecheadaKcal()" value="Bolacha_Recheada">Bolacha Recheada</option>
+                    <option id="Pao_frances" onclick="Pao_francesKcal()" value="Pao_frances">Pao frances</option>
                 </select>
                 <br>
                 <div class="AddFoods">
                     <div class="Button-Add-Food">
-                        <button style="width: 100%; height: 8vh;" class="btn" id="Button-Add" type="button">
-                            Adicionar Alimento
-                        </button>
-
                         <div class="Foods-Selected">
+                            <button class="btn" id="ShowDatas" style="width: 100%; height: 7vh;" type="button">Exibir Quantidade Calórica do Alimento</button>
 
+                            <h1 class="Result-Text"></h1>
+
+                            <p class="Option_Quantities"></p>
                         </div>
-                        
                     </div>
                 </div>
             </div>
